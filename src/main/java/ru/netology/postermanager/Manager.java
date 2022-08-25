@@ -1,7 +1,6 @@
 package ru.netology.postermanager;
 
 public class Manager {
-    private String filmName;
     private int countFilms;
     private String[] films = new String[0];
 
@@ -13,13 +12,6 @@ public class Manager {
         countFilms = 10;
     }
 
-    public String getFilmName() {
-        return filmName;
-    }
-
-    public void setFilmName(String filmName) {
-        this.filmName = filmName;
-    }
 
     public int getCountFilms() {
         return countFilms;
@@ -30,8 +22,8 @@ public class Manager {
     }
 
     public void addFilm(String film) {
-        String [] tmp = new String[films.length + 1];
-        for(int i = 0; i < films.length; i++) {
+        String[] tmp = new String[films.length + 1];
+        for (int i = 0; i < films.length; i++) {
             tmp[i] = films[i];
         }
         tmp[tmp.length - 1] = film;
